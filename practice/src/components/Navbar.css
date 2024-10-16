@@ -1,0 +1,21 @@
+.navbar-container{
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.navbar-menu-container{
+    display: flex;
+}
+
+.navbar-menu-item{
+    padding-left: 10px;
+}
+
+.Link{
+    text-decoration: none;
+    color: black;
+}

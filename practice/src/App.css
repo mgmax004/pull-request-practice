@@ -2,12 +2,34 @@ body{
     margin: 0;
 }
 
-.count-container{
+.count-container {
     background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 300px;
-    /* width: 300px; */
+    margin: 300px auto 0; /* Center vertically and horizontally */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%; /* Set a specific width, adjust as needed */
+    max-width: 500px; /* Optional: limit the maximum width */
+    box-sizing:border-box; /* Ensure padding is included in width */
+}
+
+.count-text{
+    color:crimson;
+    padding: 10px;
+}
+
+.count-number{
+    color:brown;
+    padding: 10px;
+}
+
+.count-handle-button{
+    background-color: pink;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
 }
