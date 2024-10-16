@@ -22,8 +22,8 @@ function App() {
 			</div>
 
 			<div className="count-number">{count}</div>
-			<button onClick={handleIncrement}>Increment</button>
-			<button onClick={handleDecrement}>Decrement</button>
+			<button className='count-handle-button' onClick={handleIncrement}>Increment</button>
+			<button className='count-handle-button' onClick={handleDecrement}>Decrement</button>
 		</div>
     )
 }
