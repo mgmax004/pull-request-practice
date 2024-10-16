@@ -1,30 +1,23 @@
-import { useState } from 'react'
 import './App.css'
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
 
 function App() {
-    const [count, setCount] = useState(0)
-
-	const handleIncrement = () => {
-		setCount(prev => prev + 1);
-	}
 	
-	const handleDecrement = () => {
-		if(count !== 0){
-			setCount(prev => prev - 1);
-		}
-	}
 
     return (
-		<div className="count-container">
+		<Router>
+			<div>
+				<Routes>
+					<Route path='/' element= {<Home/>} />
+					<Route path='/about' element= {<About/>} />
+					<Route path='/contact' element= {<Contact/>} />
 
-			<div className='count-text'>
-				COUNT
+				</Routes>
 			</div>
-
-			<div className="count-number">{count}</div>
-			<button className='count-handle-button' onClick={handleIncrement}>Increment</button>
-			<button className='count-handle-button' onClick={handleDecrement}>Decrement</button>
-		</div>
+		</Router>
     )
 }
 
